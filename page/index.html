@@ -1,18 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dot</title>
-</head>
-<body>
-    <header>
-        <h1>Aqui header</h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="../" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <link  href="../styles/globalStyle.css" rel="stylesheet">
+    <link  href="../styles/index.css" rel="stylesheet">
+    <script async src="../scripts/dropdown.js"></script>
+    <title>Home</title>
+  </head>
+  <body>
+    <header class="container-header">
+      <div class="container-header-logo">
+        <img src="../assets/icons/icon-logo-header.svg">
+      </div>
+      <div class="container-header-text">
+        <h1>LOREM IPSUN</h1>
+        <p>LOREM IPSUN ADVET GRAVI OTM</p>
+      </div>
+      <div  class="container-header-mask" >
+        <img src="../assets/images/Grupo de máscara 18.png">
+      </div>
     </header>
-    <main>
-        <h1>Aqui Main</h1>
-    </main>
-    <footer>Aqui footer</footer>
-</body>
+
+    <section class="section-content">
+      <h1>Lorem Ipsun</h1>
+      <div class="container-section-content">
+        <img
+          src="../assets/icons/icon-01.svg"
+          alt="icone de maleta marrom com detalhes amarelos, à esquerda do container"
+        />
+        <div class="container-section-text">
+          <p>
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente consectetur provident aut repudiandae, aliquam tempore labore quibusdam doloribus, blanditiis facere neque error mollitia cupiditate nihil eos quam porro dolore ipsum.
+          </p>
+          <br />
+          <ul>
+            <li><span>Lorem ipsum dolor sit amet, consectetso</span></li>
+            <li><span>Lorem ipsum dolor sit amet, consectetso</span></li>
+            <li><span>Lorem ipsum dolor sit amet, consectetso</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-dropdow">
+      <div class="section-container-header">
+        <h3>Dropdown</h3>
+        <h4>
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+          nonummy nibh euismod tincidunt ut
+        </h4>
+      </div>
+
+      <div class="container-cards">
+        <div class="section-card">
+          <div class="card-image">
+            <img
+              src="../../icons/icon-02.svg"
+              alt="imagem de mulher de costas com tablet na mao, conectando pontos numa parede"
+            />
+          </div>
+
+          <div id="container-info">
+            <div id="container-button">
+              <button id="button-show">
+                <img
+                  id="button-image"
+                  src="../../icons/icon-arrow-down.svg"
+                  onclick="showTest('text-value')"
+                />
+              </button>
+            </div>
+
+            <div display="none" id="text-value">
+              <button id="button-text">
+                <img
+                  id="button-image"
+                  src="../../icons/icon-arrow-up.svg"
+                  onclick="showTest('text-value')"
+                />
+              </button>
+              <span
+                >Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
+                fuga magni ullam illum, beatae voluptatibus cupiditate, quasi
+                officia necessitatibus minus facilis obcaecati tempora tenetur
+                dolorem odit, laudantium doloremque ad. Nihil.</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="section-card">
+          <div class="card-image">
+            <img
+              src="../../icons/icon-03.svg"
+              alt="imagem de pasta amarela com papel branco no meio, saindo para fora"
+            />
+          </div>
+          <div id="container-info">
+            <div id="container-button">
+              <button id="button-show">
+                <img
+                  id="button-image"
+                  src="../../icons/icon-arrow-down.svg"
+                  onclick="showTest('text-value')"
+                />
+              </button>
+            </div>
+
+            <div display="none" id="text-value">
+              <button id="button-text">
+                <img
+                  id="button-image"
+                  src="../../icons/icon-arrow-up.svg"
+                  onclick="showTest('text-value')"
+                />
+              </button>
+              <span
+                >Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
+                fuga magni ullam illum, beatae voluptatibus cupiditate, quasi
+                officia necessitatibus minus facilis obcaecati tempora tenetur
+                dolorem odit, laudantium doloremque ad. Nihil.</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="section-card">
+          <div class="card-image">
+            <img
+              src="../../icons/icon-04.svg"
+              alt="imagem 1 homem e uma mulher sentados em uma mesa com uma mao acenando para outra mulher que está em pé, acima das cabeças estão simbolos"
+            />
+          </div>
+          <div id="container-info">
+            <div id="container-button">
+              <button id="button-show">
+                <img
+                  id="button-image"
+                  src="../../icons/icon-arrow-down.svg"
+                  onclick="showTest('text-value')"
+                />
+              </button>
+            </div>
+            <div display="none" id="text-value">
+              <button id="button-text">
+                <img
+                  id="button-image"
+                  src="../../icons/icon-arrow-up.svg"
+                  onclick="showTest('text-value')"
+                />
+              </button>
+              <span
+                >Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
+                fuga magni ullam illum, beatae voluptatibus cupiditate, quasi
+                officia necessitatibus minus facilis obcaecati tempora tenetur
+                dolorem odit, laudantium doloremque ad. Nihil.</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>

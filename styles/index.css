@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:Raleway;
+}
+
+@font-face {
+  font-family: "Urbanist";
+  src: url("../assets/fonts/Urbanist-VariableFont_wght.ttf") format(truetype);
+  font-weight: 400;
+  font-style: normal;
+}
+
+:root {
+  --navy-blue: #03b5b0;
+  --yellow: #ffcc33;
+  --white: #ffffff;
+  --purple: #7a2b58;
+}
+.container-header{
+  background: url("../assets/images/header-1920.png");
+  width: 85rem ;
+  height: 45rem;
+  max-width: 100%;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container-header-logo{
+  margin-top: 13rem ;
+  margin-bottom: 4.5rem;
+
+}
+.container-header-text{
+  color:var(--white);
+  width: 36rem;
+  height: 9.1rem;
+  max-width: fit-content;
+}
+.container-header-text h1{
+  font-size: 5.0rem;
+  font-weight: 700
+}
+.container-header-text p{
+  font-size: 1.8rem;
+  display: flex;
+  justify-content: center;
+}
+.container-header-mask img{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%
+}
+
+.section-content{
+  width: 85rem ;
+  height: 35rem;
+  max-width: 100%;
+  background-color: var(--purple);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-content h1{
+  width: 16rem;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  color: var(--yellow);
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+}
+.container-section-content{
+  border: solid var(--white);
+  border-radius: 12px;
+  color: var(--white);
+  max-width: 51rem;
+  height: 17;
+  display: flex;
+  
+}
+
+.container-section-content img{
+  padding: 2rem;
+}
+.container-section-text{
+margin-left: 3rem;
+padding: 2rem;
+}
+
+.container-section-text li{
+list-style-type: square;
+color: var(--yellow);
+}
+
+.container-section-text span{
+color: var(--white);
+}
