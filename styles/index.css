@@ -34,7 +34,6 @@
 .container-header-logo{
   margin-top: 13rem ;
   margin-bottom: 4.5rem;
-
 }
 .container-header-text{
   color:var(--white);
@@ -102,4 +101,86 @@ color: var(--yellow);
 
 .container-section-text span{
 color: var(--white);
+}
+
+@media (max-width:375px) {
+  .container-header{
+    padding: 2rem;
+    width: 66rem;
+    height: 34rem;
+    display: flex;
+}
+
+.container-header-logo {
+  margin-top: 5rem ;
+  margin-bottom: 4.5rem;
+  width: 10rem;
+}
+.container-header-logo img{
+  max-width:100%
+}
+  .container-header-text{
+    height: auto;
+    text-align: center;
+    ;
+    width: 20rem;
+    margin-right: 10px;
+    margin-top: 30px;
+  }
+
+  .container-header-text h1{
+    font-size: 44px;
+    font-weight: 700;
+    margin-top: 1rem;
+  }
+
+  .container-header-text p{
+    font-size: 1.1rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  .section-content{
+    max-width: 370px;
+    max-width: 100%;
+    display:flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+  
+  }
+   #title-section-content{
+    display: none;
+  }
+
+  #title-container-section-text{
+    margin: 0 0 2rem 0;
+  }
+  .container-section-content{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    max-width: 90%;
+  }
+  .container-section-text{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+  .container-section-text ul{
+    margin-left: 1rem;
+    font-size: 1.1rem;
+    margin-top: 1rem;
+  }
+  .container-section-content img{
+    display: flex;
+    margin-top: -100px;
+  }
+ #container-section-bottom-left{
+  height: 2rem;
+  margin-left: -380px;
+  margin-top: 8px;
+}
+
 }
