@@ -32,139 +32,83 @@
     </header>
 
     <section class="section-content">
-      <h1 id="title-section-content">Lorem Ipsun</h1>
+      <h1 id="title-section-content-hidden">Lorem Ipsun</h1>
       <div class="container-section-content">
         <img
           src="../assets/icons/icon-01.svg"
           alt="icone de maleta marrom com detalhes amarelos, à esquerda do container"
         />
         <div class="container-section-text">
-          <h1 id="title-container-section-text">Lorem Ipsun</h1>
+          <h1 id="title-section-content-visible">Lorem Ipsun</h1>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
             consectetur provident aut repudiandae, aliquam tempore labore
-        
           </p>
           <br />
           <ul>
-            <li id="li1"><span>Lorem ipsum dolor sit amet, consectetso</span></li>
+            <li id="li1">
+              <span>Lorem ipsum dolor sit amet, consectetso</span>
+            </li>
             <li><span>Lorem ipsum dolor sit amet, consectetso</span></li>
             <li><span>Lorem ipsum dolor sit amet, consectetso</span></li>
           </ul>
         </div>
       </div>
-      <img
-        id="container-section-bottom-left"
-        src="../assets/icons/icon-blue-big.svg"
-      />
+      <div class="container-section-bottom-left">
+        <img src="../assets/icons/icon-blue-big.svg" />
+      </div>
     </section>
 
-    <section class="section-dropdow">
-      <div class="section-container-header">
+    <section class="section-dropdown">
+      <div class="section-dropdown-header">
         <h3>Dropdown</h3>
-        <h4>
+        <p id="section-dropdown-header-text-show">
           Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
           nonummy nibh euismod tincidunt ut
-        </h4>
+        </p>
+        <p id="section-dropdown-header-text-hidden">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates ea
+          ad, necessitatibus, iste deleniti repudiandae rerum dolores facilis
+          nulla cumque illum repellat? Doloribus aut nihil ea officia
+          consectetur quam, sed dignissimos nemo ducimus modi delectus. Numquam
+          exercitationem sint corrupti eligendi dolorem excepturi atque! Quo
+          consectetur accusamus sapiente ipsum perspiciatis reiciendis aliquam
+          nostrum, delectus eum aut quisquam dicta asperiores qui enim dolores
+          similique! Aperiam amet velit illum voluptate ipsa cum commodi
+          repellat dignissimos praesentium fugit, saepe, provident tempora
+          debitis quaerat asperiores nisi, facilis adipisci in officia.
+          Temporibus esse quasi velit ea.
+        </p>
       </div>
-
-      <div class="container-cards">
-        <div class="section-card">
+      <div class="section-cards">
+        <div class="container-card">
           <div class="card-image">
             <img
-              src="../../icons/icon-02.svg"
+              src="../assets/icons/icon-02.svg"
               alt="imagem de mulher de costas com tablet na mao, conectando pontos numa parede"
             />
           </div>
 
-          <div id="container-info">
-            <div id="container-button">
-              <button id="button-show">
+          <div id="section-container-info">
+            <div class="section-container-button">
+              <button class="section-button-show">
                 <img
-                  id="button-image"
-                  src="../../icons/icon-arrow-down.svg"
+                  class="section-button-card"
+                  src="../assets/icons/icon-arrow-down.svg"
                   onclick="showTest('text-value')"
                 />
               </button>
             </div>
 
-            <div display="none" id="text-value">
-              <button id="button-text">
+            <div display="none" class="section-container-info-text" id="text-value">
+              <button class="section-container-info-button" id="button-text">
                 <img
                   id="button-image"
-                  src="../../icons/icon-arrow-up.svg"
+                  src="../assets/icons/icon-arrow-up.svg"
                   onclick="showTest('text-value')"
                 />
               </button>
-              <span
-                >Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
-                fuga magni ullam illum, beatae voluptatibus cupiditate, quasi
-                officia necessitatibus minus facilis obcaecati tempora tenetur
-                dolorem odit, laudantium doloremque ad. Nihil.</span
-              >
-            </div>
-          </div>
-        </div>
-        <div class="section-card">
-          <div class="card-image">
-            <img
-              src="../../icons/icon-03.svg"
-              alt="imagem de pasta amarela com papel branco no meio, saindo para fora"
-            />
-          </div>
-          <div id="container-info">
-            <div id="container-button">
-              <button id="button-show">
-                <img
-                  id="button-image"
-                  src="../../icons/icon-arrow-down.svg"
-                  onclick="showTest('text-value')"
-                />
-              </button>
-            </div>
 
-            <div display="none" id="text-value">
-              <button id="button-text">
-                <img
-                  id="button-image"
-                  src="../../icons/icon-arrow-up.svg"
-                  onclick="showTest('text-value')"
-                />
-              </button>
-              <span
-                >Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
-                fuga magni ullam illum, beatae voluptatibus cupiditate, quasi
-                officia necessitatibus minus facilis obcaecati tempora tenetur
-                dolorem odit, laudantium doloremque ad. Nihil.</span
-              >
-            </div>
-          </div>
-        </div>
-        <div class="section-card">
-          <div class="card-image">
-            <img
-              src="../../icons/icon-04.svg"
-              alt="imagem 1 homem e uma mulher sentados em uma mesa com uma mao acenando para outra mulher que está em pé, acima das cabeças estão simbolos"
-            />
-          </div>
-          <div id="container-info">
-            <div id="container-button">
-              <button id="button-show">
-                <img
-                  id="button-image"
-                  src="../../icons/icon-arrow-down.svg"
-                  onclick="showTest('text-value')"
-                />
-              </button>
-            </div>
-            <div display="none" id="text-value">
-              <button id="button-text">
-                <img
-                  id="button-image"
-                  src="../../icons/icon-arrow-up.svg"
-                  onclick="showTest('text-value')"
-                />
-              </button>
               <span
                 >Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
                 fuga magni ullam illum, beatae voluptatibus cupiditate, quasi
