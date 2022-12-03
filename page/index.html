@@ -12,6 +12,7 @@
       rel="stylesheet"
     />
     <link href="../styles/index.css" rel="stylesheet" />
+    <link href="../styles/mediaqueries.css" rel="stylesheet" />
     <script async src="../scripts/dropdown.js"></script>
     <title>Home</title>
   </head>
@@ -58,67 +59,84 @@
         <img src="../assets/icons/icon-blue-big.svg" />
       </div>
     </section>
-
+    <!-- ------------------------ DROPDOWN----------------------------- -->
     <section class="section-dropdown">
-      <div class="section-dropdown-header">
-        <h3>Dropdown</h3>
-        <p id="section-dropdown-header-text-show">
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-          nonummy nibh euismod tincidunt ut
+      <div class="container-section-dropdow">
+        <h2>Drowdown</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
+          aliquam odit provident eaque totam, eius pariatur.
         </p>
-        <p id="section-dropdown-header-text-hidden">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates ea
-          ad, necessitatibus, iste deleniti repudiandae rerum dolores facilis
-          nulla cumque illum repellat? Doloribus aut nihil ea officia
-          consectetur quam, sed dignissimos nemo ducimus modi delectus. Numquam
-          exercitationem sint corrupti eligendi dolorem excepturi atque! Quo
-          consectetur accusamus sapiente ipsum perspiciatis reiciendis aliquam
-          nostrum, delectus eum aut quisquam dicta asperiores qui enim dolores
-          similique! Aperiam amet velit illum voluptate ipsa cum commodi
-          repellat dignissimos praesentium fugit, saepe, provident tempora
-          debitis quaerat asperiores nisi, facilis adipisci in officia.
-          Temporibus esse quasi velit ea.
-        </p>
-      </div>
-      <div class="section-cards">
-        <div class="container-card">
-          <div class="card-image">
-            <img
-              src="../assets/icons/icon-02.svg"
-              alt="imagem de mulher de costas com tablet na mao, conectando pontos numa parede"
-            />
-          </div>
-
-          <div id="section-container-info">
-            <div class="section-container-button">
-              <button class="section-button-show">
-                <img
-                  class="section-button-card"
-                  src="../assets/icons/icon-arrow-down.svg"
-                  onclick="showTest('text-value')"
-                />
-              </button>
+        <div class="container-split">
+          <div class="container-cards" id="container-card-center">
+            <div class="container-cards-image">
+              <img src="../assets/icons/icon-02.svg" alt="" />
             </div>
 
-            <div display="none" class="section-container-info-text" id="text-value">
-              <button class="section-container-info-button" id="button-text">
-                <img
-                  id="button-image"
-                  src="../assets/icons/icon-arrow-up.svg"
-                  onclick="showTest('text-value')"
-                />
-              </button>
+            <div class="dropdown">
+              <div class="dropdown-container-icon">
+                <div class="dropdown-icon-arrow">
+                  <img src="../assets/icons/icon-arrow-down.svg" />
+                </div>
+              </div>
+              <div id="boxLeft" class="container-cards-text">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                  diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+                  aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
+                  nostrud exerci tation ullamcorper suscipit lobortis nisl ut
+                  aliquip ex ea commodo consequat.
+                </p>
+              </div>
+            </div>
+          </div>
 
-              <span
-                >Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
-                fuga magni ullam illum, beatae voluptatibus cupiditate, quasi
-                officia necessitatibus minus facilis obcaecati tempora tenetur
-                dolorem odit, laudantium doloremque ad. Nihil.</span
-              >
+          <div class="container-cards" id="container-card-center">
+            <div class="container-cards-image">
+              <img src="../assets/icons/icon-03.svg" alt="" />
+            </div>
+            <div class="dropdown">
+              <div class="dropdown-container-icon">
+                <div class="dropdown-icon-arrow">
+                  <img src="../assets/icons/icon-arrow-down.svg" />
+                </div>
+              </div>
+              <div id="boxLeft" class="container-cards-text">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                  diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+                  aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
+                  nostrud exerci tation ullamcorper suscipit lobortis nisl ut
+                  aliquip ex ea commodo consequat.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="container-cards">
+            <div class="container-cards-image">
+              <img src="../assets/icons/icon-04.svg" alt="" />
+            </div>
+            <div class="dropdown">
+              <div class="dropdown-container-icon">
+                <div class="dropdown-icon-arrow">
+                  <img src="../assets/icons/icon-arrow-down.svg" />
+                </div>
+              </div>
+              <div id="boxLeft" class="container-cards-text">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                  diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+                  aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
+                  nostrud exerci tation ullamcorper suscipit lobortis nisl ut
+                  aliquip ex ea commodo consequat.
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
+    <!-- ------------------------ DROPDOWN----------------------------- -->
   </body>
 </html>
