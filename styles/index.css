@@ -178,8 +178,6 @@ h2{
   display: flex;
   justify-content: center;
   position: relative;
-
-
 }
 /* esta com index  1 para aparecer  */
 .dropdown-icon-arrow{
@@ -189,9 +187,8 @@ h2{
   border: none;
   border-radius: 50%;
   display: flex;
-  margin: 1rem 0 -1rem 0;
-
-
+  position: absolute;
+  transform: translateY(50%);
 }
 
 .dropdown-icon-arrow img{
@@ -206,9 +203,9 @@ h2{
   color:var(--purple);
   border-radius: 0 0 20px 20px;
   height: 18rem;
-  margin-top: -2rem;
   padding: 60px 15px 0 15px;
-  display: none;
+  margin-top: -2rem;
+/*   display: none; */
   
 }
 
