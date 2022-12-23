@@ -6,7 +6,6 @@ const colors = {
 
 
 let card = document.querySelector('.container-cards')
-console.log(card)
 
 let divCard = document.querySelector(".dropdown-container-button")
 
@@ -14,21 +13,29 @@ let button = document.querySelector(".dropdown-icon-arrow")
 
 let containerText = document.querySelector(".container-cards-text")
 
+let backgroundImageButton = document.querySelector("#image-card-left")
+
+
 let containerValues = {
     display: "none",
-    backgroundButton: colors.purple
+    backgroundButton: colors.purple,
+    backgroundImageButton: ""
 };
 
 function handleValues() {
+
     containerText.style.display = containerValues.display;
-    button.style.backgroundColor = containerValues.backgroundButton
+    button.style.backgroundColor = containerValues.backgroundButton;
+    button.style.src = containerValues.backgroundImageButton    
 }
- handleValues()
 
 function clickButton() {
 
     if (containerValues.display = "none") {
-        containerValues.display = "block"
+        containerValues.display = "block";
+     document.getElementById("image-card-left").src = "../assets/icons/icon-arrow-up.svg" 
+     divCard.style.backgroundColor = colors.yellow
+        
     } else{
         containerValues.display = "none"
     }
