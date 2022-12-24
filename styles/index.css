@@ -1,3 +1,5 @@
+@import "colors.css";
+
 * {
   margin: 0;
   padding: 0;
@@ -5,17 +7,7 @@
   font-family: Raleway;
 }
 
-:root {
-  --navy-blue: #03b5b0;
-  --yellow: #ffcc33;
-  --white: #ffffff;
-  --purple: #7a2b58;
-}
-body h3 {
-  color: var(--yellow);
-  font-weight: bold;
-}
-.container-header {
+header{
   background: url("../assets/images/header-1920.png");
   width: 85rem;
   height: 45rem;
@@ -26,35 +18,39 @@ body h3 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  
 }
 
-.container-header-logo {
+header div img{
   margin-top: 13rem;
   margin-bottom: 4.5rem;
+
 }
-.container-header-text {
+
+header :nth-child(2) {
   color: var(--white);
   width: 36rem;
   height: 9.1rem;
   max-width: fit-content;
 }
-.container-header-text h1 {
+header :nth-child(2)  h1 {
   font-size: 5rem;
   font-weight: 700;
 }
-.container-header-text p {
+header :nth-child(2)  p {
   font-size: 1.8rem;
   display: flex;
   justify-content: center;
 }
-.container-header-mask img {
+header :nth-child(3) {
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 100%;
+  width: 85rem;
+  height: 10rem;
+  max-width: 100%;
 }
-
-.section-content {
+article{
   width: 85rem;
   height: 35rem;
   max-width: 100%;
@@ -63,9 +59,9 @@ body h3 {
   flex-direction: column;
   align-items: center;
   position: relative;
+  
 }
-
-.section-content h1 {
+article h3{
   width: 16rem;
   font-size: 2rem;
   display: flex;
@@ -73,144 +69,24 @@ body h3 {
   color: var(--yellow);
   margin-top: 5rem;
   margin-bottom: 2rem;
+
 }
-.container-section-content {
+article .article-content {
   border: solid var(--white);
   border-radius: 20px;
   color: var(--white);
-  max-width: 51rem;
+  max-width: 40rem;
   height: 17;
   display: flex;
-}
-
-.container-section-content img {
   padding: 2rem;
-}
-.container-section-text {
-  margin-left: 3rem;
-  padding: 2rem;
-}
-
-.container-section-text li {
-  list-style-type: square;
   color: var(--yellow);
-}
-
-.container-section-text span {
-  color: var(--white);
-}
-
-.container-section-bottom-left {
-  width: 10rem;
-  height: 10rem;
-  position: absolute;
-  bottom: 0;
-  left: -0;
-}
-.container-section-bottom-left img {
-  width: 100%;
-  display: flex;
-  margin: 5rem 0 0 -50%;
-}
-
-.section-dropdown{
-  background-color: var(--navy-blue);
-  width: 1366px;
-  height: 933px;
-
-  
-}
-.container-section-dropdow{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 944px;
-  height: 579px;
-  margin: auto;
-  color: var(--white);
-}
-h2{
-  color: var(--yellow);
-  margin: 3rem 3rem;
-}
-.container-split{
-  display: flex;
-  justify-content: space-around;
-  width: 100%;
-  height: 100%;
-  margin-top: 3rem;
-}
-.container-cards{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 16rem;
-  position:relative;
 
 }
-
-.container-cards-image{
-  margin-top: 1rem;
-  background-color: var(--white);
-  width: 100%;
-  max-height: 12rem;
-  border-radius: 20px 20px 0 0;
-  display: flex;
-  justify-content: center;
-
+article .article-content div{
+  margin-left: 2rem;
 }
-.container-cards-image img{
-  height: 60%;
-  width: 70%;
-  margin: auto;
-}
-
-.dropdown{
-  display: flex;
-  flex-direction: column;
-}
-.dropdown-container-button{
-  background-color: var(--purple);
-  border-radius: 0px 0 20px 20px;
-  width: 16rem;
-  height: 3rem;
-  z-index: 1;
-  display: flex;
-  justify-content: center;
-  position: relative;
-}
-/* esta com index  1 para aparecer  */
-.dropdown-icon-arrow{
-  background-color: var(--white);
-  height: 3rem;
-  width: 3rem;
-  border: none;
-  border-radius: 50%;
-  display: flex;
-  position: absolute;
-  transform: translateY(50%);
-}
-
-.dropdown-icon-arrow img{
-  width: 80%;
-  margin: auto;
-
-}
-
-.container-cards-text{
-  background-color: var(--yellow);
-  text-align: left;
-  color:var(--purple);
-  border-radius: 0 0 20px 20px;
-  height: 18rem;
-  padding: 60px 15px 0 15px;
-  margin-top: -2rem;
-  display: none
-  
-}
-
-#container-card-center .container-cards-image{
-  width: 100%;
-  height: 100%;
-}
-
+article ul{
+    list-style: inside ;
+    list-style-type: square;
+    margin-top: 1rem;
+} 
