@@ -168,11 +168,10 @@ main section p {
 }
 
 .container-cards button{
-  background-image: url("../assets/icons/icon-arrow-down.svg");
   background-color: var(--white);
   border-radius: 50%;
   padding: 5px;
-  transform: translateY(50%);
+  transform: translateY(80%);
   border: none;
   background-repeat: no-repeat;
   background-position: center;
@@ -189,17 +188,4 @@ main section p {
   display: none;
   margin-top: -3rem;
   padding-top:6rem;
-}
-
-.text-show{
-  background-color:var(--yellow);
-  width: 100%;
-  padding: 2.5rem;
-  color: var(--purple);
-  text-align: justify;
-  border-radius: 0 0 20px 20px;
-  display: block;
-  margin-top: -3rem;
-  padding-top:6rem;
-  display: block;
 }
