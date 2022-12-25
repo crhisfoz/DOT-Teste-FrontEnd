@@ -19,11 +19,16 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  
 }
 
 header div img {
   margin-top: 12rem;
   margin-bottom: 4.5rem;
+}
+
+header div p{
+  color: var(--white);
 }
 
 header :nth-child(2) {
@@ -83,8 +88,14 @@ section h3 {
   margin: 0 auto;
   position: relative;
 }
+#main-article .article-content p{
+  color: var(--white);
+
+}
+
 #main-article .article-content div {
   margin-left: 2rem;
+  
 }
 #main-article ul {
   list-style-type: none;
@@ -113,10 +124,11 @@ main #section-dropdown {
   overflow: hidden !important;
 }
 
-main section p {
+main #section-dropdown > p {
   width: 59rem;
   margin: 0 auto;
   text-align: justify;
+  color: var(--white);
 }
 
 .container-split {
@@ -125,6 +137,7 @@ main section p {
   display: flex;
   justify-content: space-between;
   margin: 3rem auto 0 auto;
+  
 }
 
 .container-split div {
@@ -133,6 +146,7 @@ main section p {
   border-radius: 20px 20px 0 0;
   display: flex;
   flex-direction: column;
+
   
 }
 .container-cards {
@@ -168,7 +182,6 @@ main section p {
   border: none;
   background-repeat: no-repeat;
   background-position: center;
-  cursor: pointer;
   
 }
 
@@ -186,15 +199,15 @@ main section p {
 #section-dropdown figure{
   width: 10rem;
   height: 10rem;
-  transform: translate(350%, -10%);
-}
+  transform: translate(350%, -10%)
+  ;}
 
 /*  estilização da section article */
 
 section article{
   width: 85rem;
   height:42.5rem;
-  background-color: var(--darkGrey);
+  background-color: var(--grey);
   display:flex;
   flex-direction: column;
 }
@@ -202,6 +215,7 @@ section article > h3{
   width: 14rem;
   padding: 0;
   margin: 2rem auto;
+  
 }
 
 section article #section-article-container{
@@ -209,6 +223,7 @@ section article #section-article-container{
   height: 26rem;
   margin: 3rem 16.5rem 3rem 13rem ;
   display: flex;
+ 
 
 }
 
@@ -220,6 +235,7 @@ section article #section-article-container{
   text-align: left;
   justify-content: center;
   align-items: center;
+  color: var(--white);
 
 }
 #section-article-container figure{
@@ -257,6 +273,7 @@ section article #section-article-container{
 
 }
 
+
 /*  estilização da section #container-image */
 .section-container-image{
   width: 85rem;
@@ -264,14 +281,14 @@ section article #section-article-container{
   background-color: var(--white);
   color: var(--navy-blue);
 }
-#section-container-image p{
+#section-container-image > p{
   width: 59rem;
   height: 9rem;
   margin-top: 2rem;
   color:var(--grey);
   font-size: 1.25rem;
 }
-#section-container-image #container-background-interative{
+#section-container-image #container-background-interactive{
   width:37.5rem ;
   height: 38rem;
   margin: 3rem auto;
@@ -284,26 +301,40 @@ section article #section-article-container{
   align-items: center;
 
 }
- #section-container-image #div-container-interative{
+ #section-container-image #div-container-interactive{
   width: 70%;
   height: 70%;
   display: flex;
   position: relative;
+  display: flex;
+  flex-direction: row;
  }
 
- #cirle-colors-interative{
+ #circle-colors-interactive{
   width: 80%;
   height: 80%;
   background-color: var(--yellow);
   border-radius: 50%;
   margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
  }
 
- .interative-buttons{
-  background-image: url('../assets/icons/icon-plus.svg');
+ .interactive-buttons-active{
+  background-image: url("../assets/icons/icon-plus.svg");
   background-repeat: no-repeat;
   background-position: center;
-  background-color: #03b5b0;
+  background-color: var(--navy-blue);
+  border: none;
+ }
+
+ .interactive-buttons-inactive{
+  background-image: url("../assets/icons/icon-minos.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color:var(--purple)
  }
 
  #yellow-button, #red-button, #grey-button{
@@ -315,16 +346,29 @@ section article #section-article-container{
 }
 
 #yellow-button{
-transform: translateX(400%);
+transform: translate(390%, 30%);
 }
 
 #red-button{
-  bottom:-5%;
-  left:-10%;
+  bottom:-2%;
+  left:-5%;
+  position: absolute;
 
 }
 
 #grey-button{
-  bottom:-5%;
-  right:-12%;
+  bottom:-2%;
+  right:-8%;
+}
+ .interactive-text{
+  font-size: 1.5rem;
+  height: 3rem;
+  width:fit-content;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+}
+.interactive-text, p , strong{
+  color: var(--black);
 }

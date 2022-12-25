@@ -12,8 +12,9 @@
     />
     <link href="../styles/index.css" type="text/css" rel="stylesheet" />
     <link href="../styles/mediaqueries.css" type="text/css" rel="stylesheet" />
-    <script src="../scripts/script.js" defer></script>
-    <title>Home</title>
+    <script src="../scripts/script-dropdown.js" defer></script>
+    <script src="../scripts/script-interactive.js" defer></script>
+    <title>Dot</title>
   </head>
   <body>
     <header>
@@ -73,7 +74,7 @@
               <img src="../assets/icons/icon-02.svg" />
             </div>
             <div class="button">
-              <button><img src="../assets/icons/icon-arrow-down.svg" /></button>
+              <button  class="button-dropdown"><img src="../assets/icons/icon-arrow-down.svg" /></button>
               <p class="text-hidden left">
                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
                 diam nonummy nibh euismod tincidunt ut laoreet dolore magna
@@ -88,7 +89,7 @@
               <img src="../assets/icons/icon-03.svg" />
             </div>
             <div class="button">
-              <button><img src="../assets/icons/icon-arrow-down.svg" /></button>
+              <button  class="button-dropdown"><img src="../assets/icons/icon-arrow-down.svg" /></button>
               <p class="text-hidden">
                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
                 diam nonummy nibh euismod tincidunt ut laoreet dolore magna
@@ -103,7 +104,7 @@
               <img src="../assets/icons/icon-04.svg" />
             </div>
             <div class="button">
-              <button><img src="../assets/icons/icon-arrow-down.svg" /></button>
+              <button class="button-dropdown"><img src="../assets/icons/icon-arrow-down.svg" /></button>
               <p class="text-hidden">
                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
                 diam nonummy nibh euismod tincidunt ut laoreet dolore magna
@@ -153,12 +154,17 @@
           vero eros et accumsan et iusto odio dignissim qui blandit praesent
           luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
         </p>
-        <div id="container-background-interative">
-          <div id="div-container-interative">
-            <div id="cirle-colors-interative"></div>
-            <button id="yellow-button" class="interative-buttons"></button
-            ><button id="red-button"class="interative-buttons"></button
-            ><button id="grey-button" class="interative-buttons"></button>
+        <div id="container-background-interactive">
+          <div id="div-container-interactive">
+            <div id="circle-colors-interactive">
+              <div class="interactive-text">
+                <p>Clique nos botões para selecionar a cor de fundo </p>
+                <span><strong></strong></span> 
+              </div>
+            </div>
+            <button id="yellow-button" class="interactive-buttons-active"></button
+            ><button id="red-button"class="interactive-buttons-active"></button
+            ><button id="grey-button" class="interactive-buttons-active"></button>
           </div>
         </div>
       </section>
