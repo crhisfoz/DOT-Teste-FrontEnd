@@ -168,6 +168,7 @@ main section p {
   border: none;
   background-repeat: no-repeat;
   background-position: center;
+  cursor: pointer;
   
 }
 
@@ -185,15 +186,15 @@ main section p {
 #section-dropdown figure{
   width: 10rem;
   height: 10rem;
-  transform: translate(350%, -10%)
-  ;}
+  transform: translate(350%, -10%);
+}
 
 /*  estilização da section article */
 
 section article{
   width: 85rem;
   height:42.5rem;
-  background-color: var(--grey);
+  background-color: var(--darkGrey);
   display:flex;
   flex-direction: column;
 }
@@ -256,3 +257,74 @@ section article #section-article-container{
 
 }
 
+/*  estilização da section #container-image */
+.section-container-image{
+  width: 85rem;
+  height: 51rem ;
+  background-color: var(--white);
+  color: var(--navy-blue);
+}
+#section-container-image p{
+  width: 59rem;
+  height: 9rem;
+  margin-top: 2rem;
+  color:var(--grey);
+  font-size: 1.25rem;
+}
+#section-container-image #container-background-interative{
+  width:37.5rem ;
+  height: 38rem;
+  margin: 3rem auto;
+  background-image: url('../assets/icons/interactive.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+ #section-container-image #div-container-interative{
+  width: 70%;
+  height: 70%;
+  display: flex;
+  position: relative;
+ }
+
+ #cirle-colors-interative{
+  width: 80%;
+  height: 80%;
+  background-color: var(--yellow);
+  border-radius: 50%;
+  margin: auto;
+ }
+
+ .interative-buttons{
+  background-image: url('../assets/icons/icon-plus.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #03b5b0;
+ }
+
+ #yellow-button, #red-button, #grey-button{
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  cursor: pointer;
+  position: absolute;
+}
+
+#yellow-button{
+transform: translateX(400%);
+}
+
+#red-button{
+  bottom:-5%;
+  left:-10%;
+
+}
+
+#grey-button{
+  bottom:-5%;
+  right:-12%;
+}
