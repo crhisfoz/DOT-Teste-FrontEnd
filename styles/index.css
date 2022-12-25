@@ -50,7 +50,7 @@ header figure img {
 }
 
 /*  estilização do article*/
-main article {
+main #main-article {
   width: 85rem;
   height: 23rem;
   max-width: 100%;
@@ -67,11 +67,11 @@ section h3 {
   display: flex;
   justify-content: center;
   color: var(--yellow);
-  margin-top: 3rem;
+  padding-top: 3rem;
   margin-bottom: 2rem;
 }
 
-article .article-content {
+#main-article .article-content {
   border: solid var(--white);
   border-radius: 20px;
   color: var(--white);
@@ -83,48 +83,40 @@ article .article-content {
   margin: 0 auto;
   position: relative;
 }
-article .article-content div {
+#main-article .article-content div {
   margin-left: 2rem;
 }
-article ul {
+#main-article ul {
   list-style-type: none;
   margin-top: 1rem;
 }
-article ul li:before {
+#main-article ul li:before {
   content: "■";
   color: var(--white);
   margin-right: 1rem;
   margin-top: 1rem;
 }
 
-article figure {
+#main-article figure {
   width: 10rem;
   height: 10rem;
-  position: absolute;
-  bottom: 0;
-  left: -0;
+  transform: translate(-460%, -75%)
 }
 
-article figure img {
-  width: 100%;
-  display: flex;
-  margin: 5.2rem 0 0 -50%;
-}
-
-/*  estilização da main que contém section dropdown */
-
-main section {
+main #section-dropdown {
   background-color: var(--navy-blue);
   width: 85rem;
   height: 58rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow: hidden !important;
 }
 
 main section p {
   width: 59rem;
   margin: 0 auto;
+  text-align: justify;
 }
 
 .container-split {
@@ -132,7 +124,7 @@ main section p {
   height: 36rem;
   display: flex;
   justify-content: space-between;
-  margin-top: 2rem;
+  margin: 3rem auto 0 auto;
 }
 
 .container-split div {
@@ -141,6 +133,7 @@ main section p {
   border-radius: 20px 20px 0 0;
   display: flex;
   flex-direction: column;
+  
 }
 .container-cards {
   width: 18.8rem;
@@ -189,3 +182,77 @@ main section p {
   margin-top: -3rem;
   padding-top:6rem;
 }
+#section-dropdown figure{
+  width: 10rem;
+  height: 10rem;
+  transform: translate(350%, -10%)
+  ;}
+
+/*  estilização da section article */
+
+section article{
+  width: 85rem;
+  height:42.5rem;
+  background-color: var(--grey);
+  display:flex;
+  flex-direction: column;
+}
+section article > h3{
+  width: 14rem;
+  padding: 0;
+  margin: 2rem auto;
+}
+
+section article #section-article-container{
+  width: 59rem;
+  height: 26rem;
+  margin: 3rem 16.5rem 3rem 13rem ;
+  display: flex;
+
+}
+
+#section-article-container > p{
+  width: 40%;
+  height: 100%;
+  padding: 20px;
+  display: flex;
+  text-align: left;
+  justify-content: center;
+  align-items: center;
+
+}
+#section-article-container figure{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: relative;
+}
+#section-article-container figure :nth-child(1){
+  width: 100%;
+  height: 95%;
+  padding: 20px;
+
+}
+
+#section-article-container figure :nth-child(2){
+  width: 30%;
+  height: 15%;
+  position: absolute;
+  transform: translateY(10%);
+  transform: translateX(-20%);
+  left:0;
+  top:0
+
+}
+
+#section-article-container figure :nth-child(3){
+  width: 30%;
+  height: 15%;
+  position: absolute;
+  transform: translate(10%, -20%);
+  right:0;
+  bottom:0
+
+}
+
