@@ -5,9 +5,10 @@
   padding: 0;
   box-sizing: border-box;
   font-family: Raleway;
+  color: var(--white);
 }
-
-header{
+/*  estilização do header*/
+header {
   background: url("../assets/images/header-1920.png");
   width: 85rem;
   height: 45rem;
@@ -18,31 +19,28 @@ header{
   display: flex;
   flex-direction: column;
   align-items: center;
-  
 }
 
-header div img{
-  margin-top: 13rem;
+header div img {
+  margin-top: 12rem;
   margin-bottom: 4.5rem;
-
 }
 
 header :nth-child(2) {
-  color: var(--white);
   width: 36rem;
   height: 9.1rem;
   max-width: fit-content;
 }
-header :nth-child(2)  h1 {
+header :nth-child(2) h1 {
   font-size: 5rem;
   font-weight: 700;
 }
-header :nth-child(2)  p {
+header :nth-child(2) p {
   font-size: 1.8rem;
   display: flex;
   justify-content: center;
 }
-header :nth-child(3) {
+header figure img {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -50,27 +48,29 @@ header :nth-child(3) {
   height: 10rem;
   max-width: 100%;
 }
-article{
+
+/*  estilização do article*/
+main article {
   width: 85rem;
-  height: 35rem;
+  height: 23rem;
   max-width: 100%;
   background-color: var(--purple);
   display: flex;
   flex-direction: column;
   align-items: center;
   position: relative;
-  
 }
-article h3{
+article h3,
+section h3 {
   width: 16rem;
   font-size: 2rem;
   display: flex;
   justify-content: center;
   color: var(--yellow);
-  margin-top: 5rem;
+  margin-top: 3rem;
   margin-bottom: 2rem;
-
 }
+
 article .article-content {
   border: solid var(--white);
   border-radius: 20px;
@@ -79,14 +79,127 @@ article .article-content {
   height: 17;
   display: flex;
   padding: 2rem;
-  color: var(--yellow);
-
+  color: var(--white);
+  margin: 0 auto;
+  position: relative;
 }
-article .article-content div{
+article .article-content div {
   margin-left: 2rem;
 }
-article ul{
-    list-style: inside ;
-    list-style-type: square;
-    margin-top: 1rem;
-} 
+article ul {
+  list-style-type: none;
+  margin-top: 1rem;
+}
+article ul li:before {
+  content: "■";
+  color: var(--white);
+  margin-right: 1rem;
+  margin-top: 1rem;
+}
+
+article figure {
+  width: 10rem;
+  height: 10rem;
+  position: absolute;
+  bottom: 0;
+  left: -0;
+}
+
+article figure img {
+  width: 100%;
+  display: flex;
+  margin: 5.2rem 0 0 -50%;
+}
+
+/*  estilização da main que contém section dropdown */
+
+main section {
+  background-color: var(--navy-blue);
+  width: 85rem;
+  height: 58rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main section p {
+  width: 59rem;
+  margin: 0 auto;
+}
+
+.container-split {
+  width: 59rem;
+  height: 36rem;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.container-split div {
+  width: 18.8rem;
+  height: 36rem;
+  border-radius: 20px 20px 0 0;
+  display: flex;
+  flex-direction: column;
+}
+.container-cards {
+  width: 18.8rem;
+  height: 100%;
+}
+.container-cards div {
+  height: 15rem;
+  background-color: var(--white);
+}
+
+.container-cards > div> img {
+  height: 15rem;
+  height: 80%;
+  width: 100%;
+  margin: 1rem auto 0 auto;
+  padding: 1rem;
+}
+
+.container-cards .button{
+  background-color: var(--purple);
+  height: 3rem;
+  border-radius: 0 0 20px 20px;
+  border: none;
+  align-items: center;
+}
+
+.container-cards button{
+  background-image: url("../assets/icons/icon-arrow-down.svg");
+  background-color: var(--white);
+  border-radius: 50%;
+  padding: 5px;
+  transform: translateY(50%);
+  border: none;
+  background-repeat: no-repeat;
+  background-position: center;
+  
+}
+
+.text-hidden{
+  background-color:var(--yellow);
+  width: 100%;
+  padding: 2.5rem;
+  color: var(--purple);
+  text-align: justify;
+  border-radius: 0 0 20px 20px;
+  display: none;
+  margin-top: -3rem;
+  padding-top:6rem;
+}
+
+.text-show{
+  background-color:var(--yellow);
+  width: 100%;
+  padding: 2.5rem;
+  color: var(--purple);
+  text-align: justify;
+  border-radius: 0 0 20px 20px;
+  display: block;
+  margin-top: -3rem;
+  padding-top:6rem;
+  display: block;
+}
