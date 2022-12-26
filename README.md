@@ -20,6 +20,14 @@ O que não funciona:
 
 - Clicar no card aberto do Dropdown e ele fechar
 
+## Telas
+![print-erro](https://user-images.githubusercontent.com/89948060/209494504-957fc77b-01c9-401c-a340-ff474256e6df.png)
+![header-img](https://user-images.githubusercontent.com/89948060/209494503-d6e13135-6927-441b-99ea-a17457a7385c.png)
+![article](https://user-images.githubusercontent.com/89948060/209494498-18c9651a-6408-4c01-a1a4-0a2169eb642e.png)
+![dropdown](https://user-images.githubusercontent.com/89948060/209494500-0edbaee8-687e-4faf-a56f-6aa78c915672.png)
+![section-image](https://user-images.githubusercontent.com/89948060/209494505-f1abf3bf-6314-4e06-9611-4763f83383bd.png)
+![circle-interactive](https://user-images.githubusercontent.com/89948060/209494499-9668d1d2-5aef-497d-9e6d-22561da8a722.png)
+
 ## Meta
 
 [https://github.com/crhisfoz] – crhisnokia@live.com
