@@ -7,12 +7,12 @@
   font-family: Raleway;
   color: var(--white);
 }
+
 /*  estilização do header*/
 header {
   background: url("../assets/images/header-1920.png");
   width: 85rem;
   height: 45rem;
-  max-width: 100%;
   background-size: cover;
   background-position: center center;
   position: relative;
@@ -51,14 +51,13 @@ header figure img {
   left: 0;
   width: 85rem;
   height: 10rem;
-  max-width: 100%;
+  max-width: 100%; 
 }
 
 /*  estilização do article*/
 main #main-article {
   width: 85rem;
   height: 23rem;
-  max-width: 100%;
   background-color: var(--purple);
   display: flex;
   flex-direction: column;
@@ -114,6 +113,8 @@ section h3 {
   transform: translate(-460%, -75%)
 }
 
+
+/*  estilização do section dropdown*/
 main #section-dropdown {
   background-color: var(--navy-blue);
   width: 85rem;
@@ -223,7 +224,6 @@ section article #section-article-container{
   height: 26rem;
   margin: 3rem 16.5rem 3rem 13rem ;
   display: flex;
- 
 
 }
 
@@ -275,16 +275,14 @@ section article #section-article-container{
 
 
 /*  estilização da section #container-image */
-.section-container-image{
+#section-container-image{
   width: 85rem;
   height: 51rem ;
-  background-color: var(--white);
-  color: var(--navy-blue);
 }
 #section-container-image > p{
   width: 59rem;
   height: 9rem;
-  margin-top: 2rem;
+  margin: 2rem auto;
   color:var(--grey);
   font-size: 1.25rem;
 }
@@ -371,4 +369,17 @@ transform: translate(390%, 30%);
 }
 .interactive-text, p , strong{
   color: var(--black);
+}
+
+footer{
+  width: 85rem;
+  height: 18.5rem ;
+  background-color: var(--purple);
+  display: flex;
+  align-items: center;
+}
+footer figure{
+  width: 20rem;
+  height: 6rem;
+  margin: 0 auto;
 }

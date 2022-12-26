@@ -1,40 +1,38 @@
-const colorsInterative = {
+const colorsInterativeNames = {
     yellow: "amarela !",
     red: "vermelha !",
     grey: "cinza !"
 }
 
+const rgbColorsInterative = {
+    grey: "#808080",
+    yellow: "#ffcc33",
+    red: "#ff0000"
+}
 
-const buttonsInterative = document.querySelectorAll(".interactive-buttons-active")
+const buttonsInteractive = document.querySelectorAll(".interactive-buttons-active")
 
 let showText = document.querySelector(".interactive-text")
 
 let backgroundCircle = document.getElementById("circle-colors-interactive")
-console.log(backgroundCircle)
 
-for (let i = 0; i < buttonsInterative.length; i++){
+for (let i = 0; i < buttonsInteractive.length; i++) {
 
- 
-    buttonsInterative[i].addEventListener("click", (e)=>{
+    buttonsInteractive[i].addEventListener("click", (e) => {
 
-        if(buttonsInterative[i].id === "grey-button"){
-            
+        if (buttonsInteractive[i].id === "grey-button") {
             let showColor = document.querySelector("strong");
-            showColor.innerHTML = colorsInterative.grey
-            backgroundCircle.style.backgroundColor = "#808080;"
-            document.getElementById("circle-colors-interactive").style.backgroundColor = "#808080"
-  
-        }else if(buttonsInterative[i].id === "yellow-button"){
+            showColor.innerHTML = colorsInterativeNames.grey
+            document.getElementById("circle-colors-interactive").style.backgroundColor = rgbColorsInterative.grey
+        } else if (buttonsInteractive[i].id === "yellow-button") {
             let showColor = document.querySelector("strong");
-            showColor.innerHTML = colorsInterative.yellow;
-            document.getElementById("circle-colors-interactive").style.backgroundColor = "#ffcc33"
-        }else if (buttonsInterative[i].id === "red-button") {
+            showColor.innerHTML = colorsInterativeNames.yellow;
+            document.getElementById("circle-colors-interactive").style.backgroundColor = rgbColorsInterative.yellow
+        } else if (buttonsInteractive[i].id === "red-button") {
             let showColor = document.querySelector("strong");
-            showColor.innerHTML =  colorsInterative.red;
-            document.getElementById("circle-colors-interactive").style.backgroundColor = "#ff0000"
-          
+            showColor.innerHTML = colorsInterativeNames.red;
+            document.getElementById("circle-colors-interactive").style.backgroundColor = rgbColorsInterative.red
         }
-    
     })
-    
+
 }
