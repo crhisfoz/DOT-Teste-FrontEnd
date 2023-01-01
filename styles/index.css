@@ -80,7 +80,7 @@ section h3 {
   border-radius: 20px;
   color: var(--white);
   max-width: 40rem;
-  height: 17;
+  height: 17rem;
   display: flex;
   padding: 2rem;
   color: var(--white);
@@ -102,7 +102,7 @@ section h3 {
 }
 #main-article ul li:before {
   content: "■";
-  color: var(--white);
+  color: var(--yellow);
   margin-right: 1rem;
   margin-top: 1rem;
 }
